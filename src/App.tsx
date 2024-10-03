@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Interface } from 'readline';
 import List from './components/List';
+import Form from './components/Form';
+
 
 
 const INITIAL_STATE = [
@@ -38,7 +40,8 @@ function App() {
     <div className="App">
       <h1>Subs Sofia01</h1>
       <List subs = {subs}/>
-
+      <Form />
+      
     </div>
   );
 }

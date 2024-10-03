@@ -3,7 +3,7 @@ import './App.css';
 import { Interface } from 'readline';
 import List from './components/List';
 import Form from './components/Form';
-
+import { Subs } from './types';
 
 
 const INITIAL_STATE = [
@@ -21,13 +21,6 @@ const INITIAL_STATE = [
   } 
 ]
 
-
-interface Subs {
-  nickname: string
-  subMonths: number
-  avatar: string
-  description?: string
-}
 
 function App() {
   const [subs, setSub] = useState<Subs[]>([])
